@@ -1,4 +1,5 @@
 //Lesson 8.2: Exercise 4- Exercise 5
+
 function Student(name, surname, grade) {
   this.name = name;
   this.surname = surname;
@@ -46,3 +47,10 @@ function average(students) {
   return sum/students.length;
 }
 console.log(`The Average is ${average(students)}`);
+
+let comparator = function(student1, student2) {
+  return student1.grade - student2.grade;
+}
+
+students.sort(comparator);
+console.log(students);
