@@ -1,5 +1,6 @@
 //Lesson 8.2: Exercise 4- Exercise 5
 
+
 function Student(name, surname, grade) {
   this.name = name;
   this.surname = surname;
@@ -52,5 +53,12 @@ let comparator = function(student1, student2) {
   return student1.grade - student2.grade;
 }
 
+let comparatorDesc = function(student1, student2) {
+  return student2.grade - student1.grade;
+}
+
 students.sort(comparator);
+console.log(students);
+
+students.sort(comparatorDesc);
 console.log(students);
